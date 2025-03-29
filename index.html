@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#css">CSS</a></li>
+          <li><a href="#javascript">JavaScript</a></li>
+          <li><a href="#atributos">Atributos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="sections">
+      <section id="css">
+        <h2>CSS Diseño y Estilos</h2>
+        <p>
+          Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS
+          es el lenguaje de estilos utilizado para describir la presentación de
+          documentos HTML o XML (incluyendo varios lenguajes basados en XML como
+          SVG, MathML o XHTML).
+        </p>
+        <a href="https://developer.mozilla.org/es/docs/Web/CSS">
+          <img src="img/css.jpg" alt="" />
+        </a>
+      </section>
+
+      <section id="javascript">
+        <h2>JavaScript: Interactividad en la Web</h2>
+        <p>
+          JavaScript (JS) es un lenguaje de programación ligero, interpretado, o
+          compilado justo-a-tiempo (just-in-time) con funciones de primera
+          clase.
+        </p>
+        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">
+          <img src="img/javascript_logo.png" alt="" />
+        </a>
+      </section>
+
+      <section id="atributos">
+        <h2>Atributos de CSS</h2>
+        <p>
+          Los atributos CSS (o propiedades CSS) son características que se
+          aplican a los elementos HTML para definir su apariencia y
+          comportamiento visual en una página web. Estos atributos permiten
+          modificar aspectos como el tamaño del texto, el color de fondo, el
+          espaciado, la visibilidad, las animaciones y muchas otras propiedades
+          de diseño.
+        </p>
+        <div class="table-container">
+          <table>
+            <tr>
+              <th>Nombre del Atributo</th>
+              <th>Descripción</th>
+              <th>Propiedades</th>
+              <th>Valores Posibles</th>
+              <th>Ejemplo de Uso</th>
+              <th>Imagen Representativa</th>
+              <th>Fuente</th>
+            </tr>
+            <tr>
+              <td>font-size</td>
+              <td>Define el tamaño de la fuente.</td>
+              <td>Texto</td>
+              <td>px, em, rem, %</td>
+              <td>font-size: 16px;</td>
+              <td><img src="img/font size.jpg" alt="Ejemplo font-size" /></td>
+              <td>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size"
+                  >MDN</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>border-radius</td>
+              <td>Redondea las esquinas de un elemento.</td>
+              <td>Borde</td>
+              <td>px, %</td>
+              <td>border-radius: 10px;</td>
+              <td>
+                <img src="img/border-radious.png" alt="Ejemplo border-radius" />
+              </td>
+              <td>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius"
+                  >MDN</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>display</td>
+              <td>Especifica el tipo de caja de un elemento.</td>
+              <td>Disposición</td>
+              <td>block, inline, flex, grid</td>
+              <td>display: flex;</td>
+              <td><img src="img/display.png" alt="Ejemplo display" /></td>
+              <td>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/display"
+                  >MDN</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>flexbox (display: flex;)</td>
+              <td>Define un contenedor flexible.</td>
+              <td>Diseño</td>
+              <td>flex</td>
+              <td>display: flex;</td>
+              <td><img src="flexbox.png" alt="Ejemplo flexbox" /></td>
+              <td>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/flexbox"
+                  >MDN</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>position</td>
+              <td>Determina cómo se posiciona un elemento en la página.</td>
+              <td>Posicionamiento</td>
+              <td>static, relative, absolute, fixed</td>
+              <td>position: absolute;</td>
+              <td><img src="position.png" alt="Ejemplo position" /></td>
+              <td>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/position"
+                  >MDN</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>box-shadow</td>
+              <td>Agrega sombras a los elementos.</td>
+              <td>Sombra</td>
+              <td>offset-x offset-y blur-radius color</td>
+              <td>box-shadow: 5px 5px 10px gray;</td>
+              <td><img src="box-shadow.png" alt="Ejemplo box-shadow" /></td>
+              <td>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow"
+                  >MDN</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>overflow</td>
+              <td>Controla el contenido desbordante.</td>
+              <td>Visualización</td>
+              <td>visible, hidden, scroll, auto</td>
+              <td>overflow: hidden;</td>
+              <td><img src="overflow.png" alt="Ejemplo overflow" /></td>
+              <td>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow"
+                  >MDN</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>z-index</td>
+              <td>Define la superposición de elementos.</td>
+              <td>Capas</td>
+              <td>Número entero</td>
+              <td>z-index: 10;</td>
+              <td><img src="z-index.png" alt="Ejemplo z-index" /></td>
+              <td>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index"
+                  >MDN</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>opacity</td>
+              <td>Ajusta la transparencia del elemento.</td>
+              <td>Visual</td>
+              <td>0 a 1</td>
+              <td>opacity: 0.5;</td>
+              <td><img src="opacity.png" alt="Ejemplo opacity" /></td>
+              <td>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/opacity"
+                  >MDN</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>margin</td>
+              <td>Define los márgenes de un elemento.</td>
+              <td>Espaciado</td>
+              <td>px, %, auto</td>
+              <td>margin: 10px;</td>
+              <td>
+                <img src="margin-padding.png" alt="Ejemplo margin y padding" />
+              </td>
+              <td>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin"
+                  >MDN</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>visibility</td>
+              <td>Controla la visibilidad de un elemento.</td>
+              <td>Visualización</td>
+              <td>visible, hidden, collapse</td>
+              <td>visibility: hidden;</td>
+              <td><img src="visibility.png" alt="Ejemplo visibility" /></td>
+              <td>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/visibility"
+                  >MDN</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>cursor</td>
+              <td>
+                Define el tipo de cursor cuando se pasa sobre un elemento.
+              </td>
+              <td>Interacción</td>
+              <td>pointer, default, text, move, etc.</td>
+              <td>cursor: pointer;</td>
+              <td><img src="cursor.png" alt="Ejemplo cursor" /></td>
+              <td>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/cursor"
+                  >MDN</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>transform</td>
+              <td>Permite aplicar transformaciones a un elemento.</td>
+              <td>Transformación</td>
+              <td>rotate(), scale(), translate(), skew()</td>
+              <td>transform: rotate(45deg);</td>
+              <td><img src="transform.png" alt="Ejemplo transform" /></td>
+              <td>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform"
+                  >MDN</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>transition</td>
+              <td>Especifica efectos de transición entre estados.</td>
+              <td>Animación</td>
+              <td>all, property duration timing-function</td>
+              <td>transition: all 0.3s ease-in-out;</td>
+              <td><img src="transition.png" alt="Ejemplo transition" /></td>
+              <td>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition"
+                  >MDN</a
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+body{
+    background-color: rgb(76, 84, 199);
+    padding: 0;
+    margin: 0;
+}
+
+/**********************************************************************************************************/
+/***********************************  Header ********************************************************/
+/**********************************************************************************************************/
+
+header {
+    display: flex;
+    background-color: rgb(14, 14, 94);    
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+header nav ul {
+    list-style: none;
+    color: white;
+    display: flex;    
+}
+
+header nav ul li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li:hover {
+    background-color: rgb(37, 37, 90);  
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 10px;
+}
+
+/**********************************************************************************************************/
+/***********************************  body ********************************************************/
+/**********************************************************************************************************/
+
+section {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: aliceblue;
+    margin: 1rem;
+    padding: 1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+section img {    
+    height: 200px;
+}
+
+
+
+.sections {
+    margin-top: 7rem;
+}
+
+/**********************************************************************************************************/
+/***********************************  Table Styles ********************************************************/
+/**********************************************************************************************************/
+.table-container {
+    width: 100%;
+    overflow-x: auto;/**permite hacer scroll lateral*/
+}
+
+table {
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+td {    
+    border: 1px solid black;
+}
+
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid black;   
+}
+
+table tr td img {
+    width: 50px;
+    height: 50px;
+}
+
+
+table tr td a  {
+    color: blue;
+    text-decoration: dotted;
+}
+
+/**********************************************************************************************************/
+    /***********************************  Mobile ********************************************************/
+    /**********************************************************************************************************/
+
+@media (max-width: 768px) {
+
+    header {
+        display: block;
+        background-color: rgb(14, 14, 94);    
+        width: 100%;
+        justify-content: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+    header nav ul {   
+        display: block; 
+        margin-left: -2rem;      
+    }
+
+    header nav ul li {   
+        display: block;     
+        font-size: 25px;        
+    }
+
+    header nav ul li:hover {
+        background-color: rgb(37, 37, 90);  
+        /*padding: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        border-radius: 10px;*/
+    }
+
+    section {
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: aliceblue;
+        margin: 1rem;
+        padding: 1rem;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    section img {    
+        height: 200px;
+        width: 100%;
+    }
+
+    /**********************************************************************************************************/
+    /***********************************  Table Styles ********************************************************/
+    /**********************************************************************************************************/
+    table {
+        font-size: 14px;
+    }
+    th, td {
+        padding: 8px;
+    }
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
